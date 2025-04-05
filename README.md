@@ -744,11 +744,11 @@ Configure DNS for your application:
 
 4. **Commit Changes**: Push your code to GitHub
 
-![image](https://github.com/user-attachments/assets/1713189d-9d52-4b03-8033-0ce49259152e)
+![image](https://github.com/user-attachments/assets/16a3b81b-c4f6-432f-95ac-72b68b2b7de2)
 
-![image](https://github.com/user-attachments/assets/9ae9bf84-5673-476c-a034-a8fb4d52fb38)
+![image](https://github.com/user-attachments/assets/1a40f077-52c0-4dd5-bc79-8aee4d4ebbbc)
 
-![image](https://github.com/user-attachments/assets/8cd1ed5e-d980-4308-b6b9-092a158664b1)
+![image](https://github.com/user-attachments/assets/6adfb525-5002-46d9-a585-501d1a1cadb6)
 
 
 ## 28. Terraform Outputs
