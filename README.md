@@ -22,7 +22,10 @@ Before diving in, ensure you understand the project goals and required tools:
 ## 2. Install Terraform (Windows)
 To use Terraform, first download and install the Terraform binary for Windows:
 
-1. **Download Terraform**: Visit the official Terraform website and download the appropriate Windows ZIP archive (32-bit or 64-bit depending on your system).   ![image](https://github.com/user-attachments/assets/4ec148a2-a910-4294-805b-cbe44ea1bbca)
+1. **Download Terraform**: Visit the official Terraform website and download the appropriate Windows ZIP archive (32-bit or 64-bit depending on your system).
+
+
+![image](https://github.com/user-attachments/assets/4ec148a2-a910-4294-805b-cbe44ea1bbca)
 
 
 ![image](https://github.com/user-attachments/assets/01fef2f3-fb42-4f75-a954-29290bafb901)
@@ -48,7 +51,8 @@ To use Terraform, first download and install the Terraform binary for Windows:
 
 
 4. **Verify installation**: Open a new Command Prompt and run `terraform -v` to verify that Terraform is installed and accessible. You should see the Terraform version output.                                                                            
-            ![image](https://github.com/user-attachments/assets/2a02b3e2-3b01-4264-af0e-f50eac35b880)
+
+![image](https://github.com/user-attachments/assets/2a02b3e2-3b01-4264-af0e-f50eac35b880)
 
 
 ## 3. Sign Up for a Free GitHub Account
@@ -118,10 +122,13 @@ To securely interact with GitHub without typing your password each time:
 Configure GitHub to trust your computer's SSH key:
 
 1. **Copy Public Key**: Open id_rsa.pub with a text editor and copy the entire contents                                                                                                                                                                    
-             ![image](https://github.com/user-attachments/assets/90862f11-fd74-4811-9358-db5588c4854f)
+
+![image](https://github.com/user-attachments/assets/90862f11-fd74-4811-9358-db5588c4854f)
 
 2. **GitHub Settings**: Go to GitHub, click your profile picture and choose "Settings," then "SSH and GPG keys"                                                                                                                                            
-             ![image](https://github.com/user-attachments/assets/f85494fb-3d40-4e09-a294-3c87dda0471e)
+
+
+![image](https://github.com/user-attachments/assets/f85494fb-3d40-4e09-a294-3c87dda0471e)
 
 
 ![image](https://github.com/user-attachments/assets/f3f59d47-ba6b-493d-889f-f2bab80a8b02)
@@ -130,14 +137,17 @@ Configure GitHub to trust your computer's SSH key:
        ![image](https://github.com/user-attachments/assets/1a167608-ec57-48f9-bbde-ad4d4970f36d)
 
 4. **Save Key**: Click "Add SSH key" to complete the process                                                                                                                                                                                               
-  ![image](https://github.com/user-attachments/assets/cefd3190-3713-4cda-b216-a384cd431fc1)
+
+
+![image](https://github.com/user-attachments/assets/cefd3190-3713-4cda-b216-a384cd431fc1)
 
 
 ## 9. Clone Your Private Repository
 With Git installed and SSH set up, clone the GitHub repository to your local machine:
 
 1. **Get Clone URL**: Navigate to your GitHub repository page, click the green "Code" button, and select SSH to get the SSH clone URL                                                                                                                      
-  ![image](https://github.com/user-attachments/assets/911917ba-3414-4aa3-bb96-c80103dc7d49)
+
+![image](https://github.com/user-attachments/assets/911917ba-3414-4aa3-bb96-c80103dc7d49)
 
 2. **Clone via Command Line**: Open Command Prompt in your desired directory and run:
    ```
@@ -145,15 +155,19 @@ With Git installed and SSH set up, clone the GitHub repository to your local mac
    ```![image](https://github.com/user-attachments/assets/784f90b1-c5a8-4d47-b497-13c3dedd586a)
 
 3. **Clone Confirmation**: Navigate into the new folder (`cd Terraform-Project`) and list files to verify the repository contents                                                                                                                          
-  ![image](https://github.com/user-attachments/assets/8b075e82-0e13-42a8-a4e5-876db9208ecf)
+
+
+![image](https://github.com/user-attachments/assets/8b075e82-0e13-42a8-a4e5-876db9208ecf)
  
  
  
- ![image](https://github.com/user-attachments/assets/25080811-ba1e-46ab-9368-2e977f51b2c3)
+
+![image](https://github.com/user-attachments/assets/25080811-ba1e-46ab-9368-2e977f51b2c3)
 
  
  
- ![image](https://github.com/user-attachments/assets/2265a376-8ea6-4fcb-bf77-a73c1a640eb6)
+
+![image](https://github.com/user-attachments/assets/2265a376-8ea6-4fcb-bf77-a73c1a640eb6)
 
 ## 10. Push Changes from Local to Remote
 Test pushing code to GitHub:
@@ -210,7 +224,8 @@ Improve your Terraform development experience with VS Code extensions:
 - **Terraform by Anton Kulikov** (optional): Provides additional Terraform configuration language support
 
 
-  ![image](https://github.com/user-attachments/assets/cb45f836-93ee-4dec-9f13-825920bd6586)
+
+![image](https://github.com/user-attachments/assets/cb45f836-93ee-4dec-9f13-825920bd6586)
 
 - **AWS Toolkit** (optional): For AWS integration
 
@@ -236,7 +251,9 @@ Terraform needs AWS credentials to provision resources:
 Create a separate IAM user for Terraform rather than using your root AWS account:
 
 1. **Open IAM Console**: Log in to AWS Management Console and search for "IAM"                                                                                                                                                                             
-   ![image](https://github.com/user-attachments/assets/1f95c901-0a56-4753-9467-6709e1c59e76)
+
+
+![image](https://github.com/user-attachments/assets/1f95c901-0a56-4753-9467-6709e1c59e76)
 
 2. **Add User**: Click Users in the sidebar, then Add users
 3. **User Details**: Provide a username (e.g., terraform-user) and ensure only programmatic access is selected                                                                                                                                             
@@ -467,12 +484,18 @@ Set up outbound internet access for private subnets:
 
 ![image](https://github.com/user-attachments/assets/678c5505-dc61-430b-9a61-be758ae68bda)
 
-2. **Apply Changes**: Run `terraform apply` to create these resources           ![image](https://github.com/user-attachments/assets/a45280ce-c777-4802-bfb3-2efcd69c1b0e)
- 
- 
- ![image](https://github.com/user-attachments/assets/6a1a7146-1949-4d49-aa5c-ea4dd90e4b22)
+2. **Apply Changes**: Run `terraform apply` to create these resources
 
-3. **Verify Creation**: Check AWS console to confirm resources were created               ![image](https://github.com/user-attachments/assets/129b24ae-e31b-4e2e-b529-79fca8b74aa1)
+![image](https://github.com/user-attachments/assets/a45280ce-c777-4802-bfb3-2efcd69c1b0e)
+ 
+ 
+
+![image](https://github.com/user-attachments/assets/6a1a7146-1949-4d49-aa5c-ea4dd90e4b22)
+
+3. **Verify Creation**: Check AWS console to confirm resources were created
+
+
+![image](https://github.com/user-attachments/assets/129b24ae-e31b-4e2e-b529-79fca8b74aa1)
 
 
 ![image](https://github.com/user-attachments/assets/f1b45277-da1e-4d23-966d-09e0516a2f10)
@@ -501,7 +524,10 @@ Set up outbound internet access for private subnets:
 
 Define network security rules:
 
-1. **Create security-group.tf**: Define security groups for ALB, SSH access, web servers, and database                         ![image](https://github.com/user-attachments/assets/e72e9bdb-339e-4d10-bae5-2c6b040b4a13)
+1. **Create security-group.tf**: Define security groups for ALB, SSH access, web servers, and database
+
+
+![image](https://github.com/user-attachments/assets/e72e9bdb-339e-4d10-bae5-2c6b040b4a13)
 
 
 ![image](https://github.com/user-attachments/assets/d92cc911-a71b-4f13-8c89-aade4c3fddfd)
@@ -517,7 +543,10 @@ Define network security rules:
 
 ![image](https://github.com/user-attachments/assets/d9355fc2-3cdc-4b0b-8fb6-04ac8cab0b9d)
 
-3. **Verify Creation**: Check AWS console to confirm resources were created                           ![image](https://github.com/user-attachments/assets/56e3d461-4f79-407f-9db5-8ac952880a2b)
+3. **Verify Creation**: Check AWS console to confirm resources were created
+
+
+![image](https://github.com/user-attachments/assets/56e3d461-4f79-407f-9db5-8ac952880a2b)
 
 
 ![image](https://github.com/user-attachments/assets/8fbd8173-5ec4-4959-b2a7-9990d61ff3e0)
@@ -542,7 +571,10 @@ Define network security rules:
 
 Provision a database from an existing snapshot:
 
-1. **Identify Snapshot**: Locate your "shopwise" snapshot in the AWS Console ![image](https://github.com/user-attachments/assets/6713fb09-9a87-4918-b75c-74ed7eab536e)
+1. **Identify Snapshot**: Locate your "shopwise" snapshot in the AWS Console
+
+
+![image](https://github.com/user-attachments/assets/6713fb09-9a87-4918-b75c-74ed7eab536e)
 
 
 ![image](https://github.com/user-attachments/assets/0f2f218f-501d-4ed8-8adf-445d77c34b82)
@@ -555,19 +587,30 @@ Provision a database from an existing snapshot:
 
 2. **Add Database Variables**: Update variables.tf with database parameters                  ![image](https://github.com/user-attachments/assets/0909020d-6315-46b7-a50b-735856e06623)
 
-3. **Create rds.tf**: Define database subnet group and RDS instance restored from snapshot                           ![image](https://github.com/user-attachments/assets/a78254ba-ee8c-47c9-a72b-968556f8f511)
+3. **Create rds.tf**: Define database subnet group and RDS instance restored from snapshot
+
+
+![image](https://github.com/user-attachments/assets/a78254ba-ee8c-47c9-a72b-968556f8f511)
 
 
 ![image](https://github.com/user-attachments/assets/4d197c13-e9f3-4f3d-abf5-3bcb25376ad6)
 
-4. **Apply Changes**: Run `terraform apply` to create these resources                      ![image](https://github.com/user-attachments/assets/9e115d8b-55ee-4d9a-b393-4f215200d491)
-If you encounter an error due to instance class type update and reapply             ![image](https://github.com/user-attachments/assets/3c77d12a-3a9d-4149-b212-e682f7ed22cc)
+4. **Apply Changes**: Run `terraform apply` to create these resources
+
+![image](https://github.com/user-attachments/assets/9e115d8b-55ee-4d9a-b393-4f215200d491)
+
+If you encounter an error due to instance class type update and reapply             
+
+![image](https://github.com/user-attachments/assets/3c77d12a-3a9d-4149-b212-e682f7ed22cc)
 
 
 
 ![image](https://github.com/user-attachments/assets/e537d698-617e-4fbc-a8fd-38db4b2d9d0b)
 
-5. **Verify Creation**: Check AWS console to confirm the database is available     ![image](https://github.com/user-attachments/assets/0aa59c46-8b17-4620-8d20-b838930e0dab)
+5. **Verify Creation**: Check AWS console to confirm the database is available
+
+
+![image](https://github.com/user-attachments/assets/0aa59c46-8b17-4620-8d20-b838930e0dab)
 
 6. **Commit Changes**: Push your code to GitHub
 
@@ -583,7 +626,10 @@ If you encounter an error due to instance class type update and reapply         
 ## 24. Create Application Load Balancer (ALB)
 Set up load balancing for your web application:
 
-1. **Create alb.tf**: Define ALB, target group, and listener resources                                 ![image](https://github.com/user-attachments/assets/c0466db0-7bbb-47f2-81ac-ae3859c36809)
+1. **Create alb.tf**: Define ALB, target group, and listener resources
+
+
+![image](https://github.com/user-attachments/assets/c0466db0-7bbb-47f2-81ac-ae3859c36809)
 
 
 ![image](https://github.com/user-attachments/assets/0743a660-715e-485d-b81f-b563148d3b74)
@@ -596,7 +642,10 @@ Set up load balancing for your web application:
 
 2. **Apply Changes**: Run `terraform apply` to create these resources                                        ![image](https://github.com/user-attachments/assets/08fc4f3c-c7cf-4c61-8027-c40896908a52)
 
-3. **Verify Creation**: Check AWS console to confirm ALB is provisioned                                 ![image](https://github.com/user-attachments/assets/bee1c7e7-4d57-4da5-b67b-46f100e5de5d)
+3. **Verify Creation**: Check AWS console to confirm ALB is provisioned
+
+
+![image](https://github.com/user-attachments/assets/bee1c7e7-4d57-4da5-b67b-46f100e5de5d)
 
 
 
@@ -661,28 +710,80 @@ Set up dynamic scaling for your web servers:
 ![image](https://github.com/user-attachments/assets/43b7fde3-8fa2-444f-8724-4d5c446798d3)
 
 4. **Commit Changes**: Push your code to GitHub
+![image](https://github.com/user-attachments/assets/1e3a923b-ea8a-4272-b362-d5581b44c526)
 
+![image](https://github.com/user-attachments/assets/ba1a4427-53e0-41a3-b32d-eac476c1e3fe)
 
 ## 27. Create Record Set in Route 53
+
+![image](https://github.com/user-attachments/assets/87a35012-2e91-4bb7-b3bb-ef0c8cb480ff)
+
 Configure DNS for your application:
 
-1. **Create route53.tf**: Define DNS record pointing to your ALB
+1. **Create route53.tf**: Define DNS record pointing to your ALB   
+
+![image](https://github.com/user-attachments/assets/12f4a9e8-3108-4dd1-b220-a7e887f5810b)
+
+
+![image](https://github.com/user-attachments/assets/ce974875-948d-4b25-b401-12a94c391e3e)
+
+![image](https://github.com/user-attachments/assets/20f2d94e-7c24-4b52-b279-5252ed912cf3)
+
 2. **Apply Changes**: Run `terraform apply` to create these resources
+
+![image](https://github.com/user-attachments/assets/d94194c4-514b-4f46-af1f-318d9f21b4b1)
+
+
 3. **Verify Creation**: Check AWS console and test your domain
+
+![image](https://github.com/user-attachments/assets/9081117a-1ef5-4944-b17f-3cb31b1bb8f3)
+
+![image](https://github.com/user-attachments/assets/a9e264de-a94c-4e07-9275-f98c19f41e85)
+
+
 4. **Commit Changes**: Push your code to GitHub
+![image](https://github.com/user-attachments/assets/ac8271a6-6aa4-44db-ab07-9dc816790c36)
+
+![image](https://github.com/user-attachments/assets/2aa88a05-926d-4cd7-bfea-1234e4c9c120)
+
+![image](https://github.com/user-attachments/assets/1e53ac2a-5818-4525-8b3b-c9c71eec5ea7)
+
 
 ## 28. Terraform Outputs
 Configure useful output values:
+![image](https://github.com/user-attachments/assets/72bcf372-c5de-451f-a204-1b4bc682c662)
 
 1. **Create outputs.tf**: Define outputs for important resource information
+
+![image](https://github.com/user-attachments/assets/a14be240-0dcb-458a-b5e9-d5556583a56c)
+
+
 2. **Apply Changes**: Run `terraform apply` to display these outputs
+
+![image](https://github.com/user-attachments/assets/e8bd67c7-57a4-4e67-9ef3-f9c6da04ae0f)
+
+
 3. **Verify Outputs**: Ensure all expected information is displayed
+
+![image](https://github.com/user-attachments/assets/d0da243b-9527-4d6c-a4fa-100535c25b18)
+
+
+![image](https://github.com/user-attachments/assets/e8597b2f-b157-4489-9436-6415d1965ad0)
 
 ## 29. Clean Up
 When finished, remove all created resources:
 
 1. **Destroy Resources**: Run `terraform destroy -auto-approve`
+
+![image](https://github.com/user-attachments/assets/c693c05f-a344-42e3-99f4-5ea61c773266)
+
+
+![image](https://github.com/user-attachments/assets/a912bd69-24e2-4356-90fc-89504a1a8c45)
+
 2. **Verify Cleanup**: Check AWS console to ensure all resources are removed
+
+![image](https://github.com/user-attachments/assets/6930da8c-c7ef-4707-aa61-a7778a9b51b0)
+
 3. **Remove Local Files**: Delete local credentials if no longer needed
 
 ## Conclusion
