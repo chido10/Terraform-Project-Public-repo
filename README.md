@@ -240,10 +240,14 @@ Create a separate IAM user for Terraform rather than using your root AWS account
 
 2. **Add User**: Click Users in the sidebar, then Add users
 3. **User Details**: Provide a username (e.g., terraform-user) and ensure only programmatic access is selected                                                                                                                                             
-     ![image](https://github.com/user-attachments/assets/17f252f2-49d3-4ab4-9789-00da45e7ac2e)
+ 
+ 
+ ![image](https://github.com/user-attachments/assets/17f252f2-49d3-4ab4-9789-00da45e7ac2e)
 
 4. **Permissions**: Attach AdministratorAccess policy (for learning purposes; use least privilege in production)                                                                                                                                           
-  ![image](https://github.com/user-attachments/assets/ee548f08-3da9-4a77-8648-5a87ad0e9f43)
+ 
+ 
+ ![image](https://github.com/user-attachments/assets/ee548f08-3da9-4a77-8648-5a87ad0e9f43)
 
 
 ![image](https://github.com/user-attachments/assets/fd50b540-fea6-41f2-bd32-88db8b606a84)
@@ -258,15 +262,22 @@ Create a separate IAM user for Terraform rather than using your root AWS account
 Generate credentials for the IAM user:
 
 1. **Open User Security Settings**: Click on your new user and navigate to the Security credentials tab
+
 ![image](https://github.com/user-attachments/assets/f3f647dd-662d-40e6-8bde-18fc20246e0b)
 
-2. **Create Access Key**: Click Create access key and select Command Line Interface (CLI) as the use case                          ![image](https://github.com/user-attachments/assets/bbbb8b9f-0155-4088-a2f7-3eb171b71d04)
+2. **Create Access Key**: Click Create access key and select Command Line Interface (CLI) as the use case                         
+
+
+![image](https://github.com/user-attachments/assets/bbbb8b9f-0155-4088-a2f7-3eb171b71d04)
 
 
 
 ![image](https://github.com/user-attachments/assets/1855352a-7a66-4a5f-901e-e723bb71e18a)
 
-3. **Retrieve Keys**: Copy the Access Key ID and Secret Access Key or download the CSV file              ![image](https://github.com/user-attachments/assets/1c666d9f-f149-48a2-aaf2-83161636f4fc)
+3. **Retrieve Keys**: Copy the Access Key ID and Secret Access Key or download the CSV file
+
+
+![image](https://github.com/user-attachments/assets/1c666d9f-f149-48a2-aaf2-83161636f4fc)
 
 
 
@@ -300,7 +311,10 @@ Configure a profile for Terraform with the new access keys:
 Create an S3 bucket to store Terraform state files:
 
 - **Choose a Bucket Name**: Form a globally unique bucket name
-- **Create Bucket**: In AWS Console, go to the S3 service and create a new bucket in your desired region                      ![image](https://github.com/user-attachments/assets/884fd05f-5a2a-49fe-8d20-bd65d479579e)
+- **Create Bucket**: In AWS Console, go to the S3 service and create a new bucket in your desired region
+
+
+![image](https://github.com/user-attachments/assets/884fd05f-5a2a-49fe-8d20-bd65d479579e)
 
 
 ![image](https://github.com/user-attachments/assets/a23fa56b-4502-4766-bfb0-767cb1f6ec51)
@@ -343,7 +357,11 @@ Configure Terraform to use AWS credentials:
 
 ![image](https://github.com/user-attachments/assets/f68371e5-3983-4c34-a8e4-8a4d341488f0)
 
-1. **Backend Configuration**: Create main.tf with AWS provider and S3 backend configuration                            ![image](https://github.com/user-attachments/assets/9c69054c-0912-49bf-af85-1a610b8da874)
+1. **Backend Configuration**: Create main.tf with AWS provider and S3 backend configuration
+
+
+![image](https://github.com/user-attachments/assets/9c69054c-0912-49bf-af85-1a610b8da874)
+
 ![image](https://github.com/user-attachments/assets/022761f1-37d0-453c-9565-2814f4cebef0)
 
 ![image](https://github.com/user-attachments/assets/6507099b-646e-490c-8ccf-9518f028b2fb)
@@ -365,7 +383,9 @@ Configure Terraform to use AWS credentials:
 
 ![image](https://github.com/user-attachments/assets/8935fe72-d14b-4df6-a4d5-3a55d369ef15)
 
-2. **Initialize Terraform**: Run `terraform init` to download plugins and initialize backend                         ![image](https://github.com/user-attachments/assets/0ec84ed3-212e-4de8-8c2a-bee91b3d13f2)
+2. **Initialize Terraform**: Run `terraform init` to download plugins and initialize backend                         
+
+![image](https://github.com/user-attachments/assets/0ec84ed3-212e-4de8-8c2a-bee91b3d13f2)
 
 3. **Commit Changes**: Commit and push your configuration files to GitHub
 ![image](https://github.com/user-attachments/assets/4fe47efc-001a-4c06-9628-7cbcb839883c)
@@ -385,9 +405,15 @@ Configure Terraform to use AWS credentials:
 ## 20. Create VPC
 Establish the networking foundation:
 
-1. **Create variables.tf**: Define network-related variables                            ![image](https://github.com/user-attachments/assets/3aa48a4f-f715-4000-ae2f-632abcb6d42c)
+1. **Create variables.tf**: Define network-related variables
 
-2. **Create vpc.tf**: Define VPC, subnets, internet gateway, and route table resources             ![image](https://github.com/user-attachments/assets/345ff075-7fb9-410a-b8de-afb8c3af5c41)
+ ![image](https://github.com/user-attachments/assets/3aa48a4f-f715-4000-ae2f-632abcb6d42c)
+
+2. **Create vpc.tf**: Define VPC, subnets, internet gateway, and route table resources
+
+
+![image](https://github.com/user-attachments/assets/345ff075-7fb9-410a-b8de-afb8c3af5c41)
+
 ![image](https://github.com/user-attachments/assets/06c11958-5bb1-44cf-9cdb-b098779b8bdd)
 
 ![image](https://github.com/user-attachments/assets/e16f52e8-5957-451b-be11-348fd898f3c1)
@@ -395,15 +421,16 @@ Establish the networking foundation:
 
 ![image](https://github.com/user-attachments/assets/68303813-7357-4446-bc1e-df2150304423)
 
-3. **Apply Changes**: Run `terraform apply` to create these resources                                ![image](https://github.com/user-attachments/assets/735677fa-ee26-4772-859a-a6efd5827b0c)
+3. **Apply Changes**: Run `terraform apply` to create these resources
+
+![image](https://github.com/user-attachments/assets/735677fa-ee26-4772-859a-a6efd5827b0c)
 
 ![image](https://github.com/user-attachments/assets/70cb6b5c-e99c-4505-a05c-018a0eebb677)
 
 
 ![image](https://github.com/user-attachments/assets/641a0a53-0358-45df-affb-17b770673d07)
 
-4. **Verify Creation**: Check AWS console to confirm resources were created                             ![image](https://github.com/user-attachments/assets/14d4dcb1-c214-43d4-ac6e-f28382a491ea)
-
+4. **Verify Creation**: Check AWS console to confirm resources were created                            
 
 ![image](https://github.com/user-attachments/assets/ec01f11d-b728-486e-97c5-d5dc227a2362)
 
@@ -430,7 +457,10 @@ Establish the networking foundation:
 ## 21. Create NAT Gateway
 Set up outbound internet access for private subnets:
 
-1. **Create nat-gateway.tf**: Define Elastic IPs, NAT Gateways, and private subnet route tables                        ![image](https://github.com/user-attachments/assets/7ea59c4c-4c80-456b-b560-1bb478404ce5)
+1. **Create nat-gateway.tf**: Define Elastic IPs, NAT Gateways, and private subnet route tables
+
+
+![image](https://github.com/user-attachments/assets/7ea59c4c-4c80-456b-b560-1bb478404ce5)
 
 ![image](https://github.com/user-attachments/assets/e141c4e8-f465-4978-8d2c-b762eb0fed3a)
 
@@ -468,8 +498,6 @@ Set up outbound internet access for private subnets:
 ![image](https://github.com/user-attachments/assets/2404fad1-2e5a-459e-aa67-d6488f10a67e)
 
 ## 22. Create Security Group
-![image](https://github.com/user-attachments/assets/3c201f75-79fa-41e6-a939-ffaf55e49e49)
-
 
 Define network security rules:
 
@@ -511,7 +539,6 @@ Define network security rules:
 
 ## 23. Create RDS (Database)  
 
-![image](https://github.com/user-attachments/assets/2fffc593-c332-45b3-a500-75c1776b5ff2)
 
 Provision a database from an existing snapshot:
 
@@ -591,8 +618,6 @@ Set up load balancing for your web application:
 
 ## 25. Create SNS Topic  
 
-![image](https://github.com/user-attachments/assets/269dadcd-6043-4877-8b53-990a58411f66)
-
 Configure notifications:
 
 1. **Create sns.tf**: Define SNS topic and subscription resources                            ![image](https://github.com/user-attachments/assets/d075c4c3-0e39-4414-878f-5af8248224cb)
@@ -614,21 +639,21 @@ Configure notifications:
 
 ![image](https://github.com/user-attachments/assets/fb075139-0e5f-419c-83df-be2d57e89522)
 
-## 26. Create Auto Scaling Group (ASG) 
-
-![image](https://github.com/user-attachments/assets/b081254b-0000-4254-ad50-23f57cba0821)
+## 26. Create Auto Scaling Group (ASG)
 
 Set up dynamic scaling for your web servers:
 
-1. **Create asg.tf**: Define launch template, auto scaling group, and notifications                                       ![image](https://github.com/user-attachments/assets/92521420-a71d-4232-ac87-91b7c9a6f1ad)
+1. **Create asg.tf**: Define launch template, auto scaling group, and notifications
+
+ 
+ ![image](https://github.com/user-attachments/assets/92521420-a71d-4232-ac87-91b7c9a6f1ad)
 
 
 ![image](https://github.com/user-attachments/assets/3d0b410f-8395-4a4d-b708-cfb266d1f17e)
 
 2. **Apply Changes**: Run `terraform apply` to create these resources                            ![image](https://github.com/user-attachments/assets/4a3733ae-0ff9-4614-b56c-c73614a9bfe5)
 
-3. **Verify Creation**: Check AWS console to confirm instances are running                           ![image](https://github.com/user-attachments/assets/5d2cab28-c469-4e72-be42-c8499a8243da)
-
+3. **Verify Creation**: Check AWS console to confirm instances are running                   
 
 ![image](https://github.com/user-attachments/assets/43c4325b-5d7a-43e1-a07b-19a49c236fa4)
 
@@ -636,6 +661,7 @@ Set up dynamic scaling for your web servers:
 ![image](https://github.com/user-attachments/assets/43b7fde3-8fa2-444f-8724-4d5c446798d3)
 
 4. **Commit Changes**: Push your code to GitHub
+
 
 ## 27. Create Record Set in Route 53
 Configure DNS for your application:
