@@ -716,73 +716,85 @@ Set up dynamic scaling for your web servers:
 
 ## 27. Create Record Set in Route 53
 
-![image](https://github.com/user-attachments/assets/87a35012-2e91-4bb7-b3bb-ef0c8cb480ff)
+![image](https://github.com/user-attachments/assets/53e27d6d-79b0-4be5-87ff-551fb5c036af)
+
 
 Configure DNS for your application:
 
 1. **Create route53.tf**: Define DNS record pointing to your ALB   
+![image](https://github.com/user-attachments/assets/02d6e39f-a581-4c04-a24c-5c5299140f14)
 
-![image](https://github.com/user-attachments/assets/12f4a9e8-3108-4dd1-b220-a7e887f5810b)
+![image](https://github.com/user-attachments/assets/487c85a6-0790-4927-8c2d-3e51aac0a53b)
 
+![image](https://github.com/user-attachments/assets/8516f332-2f29-47ed-a254-7c80c044e731)
 
-![image](https://github.com/user-attachments/assets/ce974875-948d-4b25-b401-12a94c391e3e)
-
-![image](https://github.com/user-attachments/assets/20f2d94e-7c24-4b52-b279-5252ed912cf3)
 
 2. **Apply Changes**: Run `terraform apply` to create these resources
 
-![image](https://github.com/user-attachments/assets/d94194c4-514b-4f46-af1f-318d9f21b4b1)
+
+![image](https://github.com/user-attachments/assets/8deb219b-5bbd-4ddb-8178-d77c40caf263)
 
 
 3. **Verify Creation**: Check AWS console and test your domain
 
-![image](https://github.com/user-attachments/assets/9081117a-1ef5-4944-b17f-3cb31b1bb8f3)
+![image](https://github.com/user-attachments/assets/d5481a49-46e2-4684-97e7-8b4583831de0)
 
-![image](https://github.com/user-attachments/assets/a9e264de-a94c-4e07-9275-f98c19f41e85)
+![image](https://github.com/user-attachments/assets/fd37d938-b20d-4ae8-b173-0c2994b170c1)
 
 
 4. **Commit Changes**: Push your code to GitHub
-![image](https://github.com/user-attachments/assets/ac8271a6-6aa4-44db-ab07-9dc816790c36)
 
-![image](https://github.com/user-attachments/assets/2aa88a05-926d-4cd7-bfea-1234e4c9c120)
+![image](https://github.com/user-attachments/assets/1713189d-9d52-4b03-8033-0ce49259152e)
 
-![image](https://github.com/user-attachments/assets/1e53ac2a-5818-4525-8b3b-c9c71eec5ea7)
+![image](https://github.com/user-attachments/assets/9ae9bf84-5673-476c-a034-a8fb4d52fb38)
+
+![image](https://github.com/user-attachments/assets/8cd1ed5e-d980-4308-b6b9-092a158664b1)
 
 
 ## 28. Terraform Outputs
 Configure useful output values:
-![image](https://github.com/user-attachments/assets/72bcf372-c5de-451f-a204-1b4bc682c662)
+
+![image](https://github.com/user-attachments/assets/75dfe627-6b6b-4a6c-b472-b527f8b04daa)
+
 
 1. **Create outputs.tf**: Define outputs for important resource information
 
-![image](https://github.com/user-attachments/assets/a14be240-0dcb-458a-b5e9-d5556583a56c)
+
+![image](https://github.com/user-attachments/assets/1d82fd42-307b-4b9f-bc3a-ec568ef78bf4)
 
 
 2. **Apply Changes**: Run `terraform apply` to display these outputs
 
-![image](https://github.com/user-attachments/assets/e8bd67c7-57a4-4e67-9ef3-f9c6da04ae0f)
+![image](https://github.com/user-attachments/assets/86f83291-b91c-41d1-a1d3-9c786c119f34)
+
 
 
 3. **Verify Outputs**: Ensure all expected information is displayed
 
-![image](https://github.com/user-attachments/assets/d0da243b-9527-4d6c-a4fa-100535c25b18)
+![image](https://github.com/user-attachments/assets/12da4a6f-2beb-436c-afb0-4fe81c5207b7)
+
+![image](https://github.com/user-attachments/assets/4391ced4-a606-4bdc-b17d-a793f2a39172)
 
 
-![image](https://github.com/user-attachments/assets/e8597b2f-b157-4489-9436-6415d1965ad0)
+![image](https://github.com/user-attachments/assets/e1b5691b-2689-4b09-99e2-cab28ff7076b)
+
 
 ## 29. Clean Up
 When finished, remove all created resources:
 
 1. **Destroy Resources**: Run `terraform destroy -auto-approve`
 
-![image](https://github.com/user-attachments/assets/c693c05f-a344-42e3-99f4-5ea61c773266)
+![image](https://github.com/user-attachments/assets/56726841-f47d-4e61-92d4-43c103e2dbe2)
 
 
-![image](https://github.com/user-attachments/assets/a912bd69-24e2-4356-90fc-89504a1a8c45)
+![image](https://github.com/user-attachments/assets/dc97ada1-2182-4e09-8a30-dedb110789e3)
+
+
 
 2. **Verify Cleanup**: Check AWS console to ensure all resources are removed
 
-![image](https://github.com/user-attachments/assets/6930da8c-c7ef-4707-aa61-a7778a9b51b0)
+![image](https://github.com/user-attachments/assets/c5afd55d-b194-4819-84d4-8545007515b0)
+
 
 3. **Remove Local Files**: Delete local credentials if no longer needed
 
